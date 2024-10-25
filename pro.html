@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Change Box</title>
+  <style>
+    .box {
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 20px 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: #ffffff;
+  
+}
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <button onclick="changeColor()">Click Me</button>
+  </div>
+  <script>
+    function changeColor() {
+  const box = document.querySelector('.box');
+  if (!isRed) {
+    box.style.backgroundColor = 'red';
+    isRed = true;
+  } else {
+    box.style.backgroundColor = 'white';
+    isRed = false;
+  }
+}
+let isRed = false;
+
+
+  </script>
+</body>
+</html>
+
+
+
